@@ -1,29 +1,29 @@
 const DB_QUIZ = [
   {
-    question: `<p>Tentukan invers matriks berikut: </p><div><img src="/images/invers1.1.jpg" alt=""></div>`,
+    question: `<p>Tentukan invers matriks berikut: </p><div><img src="/tugas-kelompok-matriks/images/invers1.1.jpg" alt=""></div>`,
     answers: [
-      `<img src="/images/invers1-3.jpg" alt="">`,
-      `<img src="/images/invers1-4.jpg" alt="">`,
-      `<img src="/images/invers1-1.jpg" alt="">`,
-      `<img src="/images/invers1-2.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers1-3.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers1-4.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers1-1.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers1-2.jpg" alt="">`,
     ],
   },
   {
-    question: `<p>Tentukan invers matriks berikut: </p> <div><img src="/images/invers2.jpg"></div>`,
+    question: `<p>Tentukan invers matriks berikut: </p> <div><img src="/tugas-kelompok-matriks/images/invers2.jpg"></div>`,
     answers: [
-      `<img src="/images/invers2-1.jpg" alt="">`,
-      `<img src="/images/invers2-4.jpg" alt="">`,
-      `<img src="/images/invers2-3.jpg" alt="">`,
-      `<img src="/images/invers2-2.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers2-1.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers2-4.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers2-3.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers2-2.jpg" alt="">`,
     ],
   },
   {
-    question: `<p>Tentukan invers matriks berikut: </p><div><img src="/images/invers3.1.jpg"></div>`,
+    question: `<p>Tentukan invers matriks berikut: </p><div><img src="/tugas-kelompok-matriks/images/invers3.1.jpg"></div>`,
     answers: [
-      `<img src="/images/invers3-2.jpg" alt="">`,
-      `<img src="/images/invers3-4.jpg" alt="">`,
-      `<img src="/images/invers3-3.jpg" alt="">`,
-      `<img src="/images/invers3-1.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers3-2.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers3-4.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers3-3.jpg" alt="">`,
+      `<img src="/tugas-kelompok-matriks/images/invers3-1.jpg" alt="">`,
     ],
   },
 ];

@@ -1,14 +1,14 @@
 const DB_QUIZ = [
   {
-    question: `<p>Tentukan determinan matriks berikut: </p><div><img src="/images/det2x2.jpg" alt=""></div>`,
+    question: `<p>Tentukan determinan matriks berikut: </p><div><img src="/tugas-kelompok-matriks/images/det2x2.jpg" alt=""></div>`,
     answers: ["23", "14", "(-3)", "(-80)"],
   },
   {
-    question: `<p>Tentukan determinan matriks berikut: </p> <div><img src="/images/det3x3.jpg"></div>`,
+    question: `<p>Tentukan determinan matriks berikut: </p> <div><img src="/tugas-kelompok-matriks/images/det3x3.jpg"></div>`,
     answers: ["2", "0", "3", "6"],
   },
   {
-    question: `<p>Tentukan hasil dari Det A - Det B matriks berikut: </p><div><img src="/images/detAB.jpg"></div>`,
+    question: `<p>Tentukan hasil dari Det A - Det B matriks berikut: </p><div><img src="/tugas-kelompok-matriks/images/detAB.jpg"></div>`,
     answers: ["16", "(-16)", "12", "10"],
   },
 ];
