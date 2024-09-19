@@ -1,19 +1,34 @@
 const DB_QUIZ = [
   {
-    question: "Apa itu Matriks?",
-    answers: ["Matrix", "Matris", "Matematika", "Math"],
+    question: `<p>Tentukan invers matriks berikut: </p><div><img src="/images/invers1.1.jpg" alt=""></div>`,
+    answers: [
+      `<img src="/images/invers1-3.jpg" alt="">`,
+      `<img src="/images/invers1-4.jpg" alt="">`,
+      `<img src="/images/invers1-1.jpg" alt="">`,
+      `<img src="/images/invers1-2.jpg" alt="">`,
+    ],
   },
   {
-    question: "Apa itu Miks?",
-    answers: ["Matrix", "Matris", "Matematika", "Math"],
+    question: `<p>Tentukan invers matriks berikut: </p> <div><img src="/images/invers2.jpg"></div>`,
+    answers: [
+      `<img src="/images/invers2-1.jpg" alt="">`,
+      `<img src="/images/invers2-4.jpg" alt="">`,
+      `<img src="/images/invers2-3.jpg" alt="">`,
+      `<img src="/images/invers2-2.jpg" alt="">`,
+    ],
   },
   {
-    question: "Apa itu Maiks?",
-    answers: ["Matrix", "Matris", "Matematika", "Math"],
+    question: `<p>Tentukan invers matriks berikut: </p><div><img src="/images/invers3.1.jpg"></div>`,
+    answers: [
+      `<img src="/images/invers3-2.jpg" alt="">`,
+      `<img src="/images/invers3-4.jpg" alt="">`,
+      `<img src="/images/invers3-3.jpg" alt="">`,
+      `<img src="/images/invers3-1.jpg" alt="">`,
+    ],
   },
 ];
 
-const CORRECT_ANSWER = [1, 3, 2];
+const CORRECT_ANSWER = [2, 0, 3];
 
 function startQuiz() {
   document.getElementById("opening_window").style.display = "none";
@@ -29,15 +44,15 @@ document.addEventListener("DOMContentLoaded", function event() {
 });
 
 function setUpQuestion() {
-  document.getElementById("question").innerText =
+  document.getElementById("question").innerHTML =
     DB_QUIZ[currentQuestion]["question"];
-  document.getElementById("choiceText0").innerText =
+  document.getElementById("choiceText0").innerHTML =
     DB_QUIZ[currentQuestion]["answers"][0];
-  document.getElementById("choiceText1").innerText =
+  document.getElementById("choiceText1").innerHTML =
     DB_QUIZ[currentQuestion]["answers"][1];
-  document.getElementById("choiceText2").innerText =
+  document.getElementById("choiceText2").innerHTML =
     DB_QUIZ[currentQuestion]["answers"][2];
-  document.getElementById("choiceText3").innerText =
+  document.getElementById("choiceText3").innerHTML =
     DB_QUIZ[currentQuestion]["answers"][3];
 }
 
@@ -61,7 +76,7 @@ function resetState() {
 function checkScore() {
   for (i = 0; i < saved_answer.length; i++) {
     if (saved_answer[i] == CORRECT_ANSWER[i]) {
-      total_score += 100;
+      total_score += 1;
     }
   }
 }
@@ -71,7 +86,7 @@ function stopQuiz() {
   document.getElementById("quiz_window").style.display = "none";
   document.getElementById("closing_window").style.display = "block";
   document.getElementById("scoreText").innerText =
-    "Score kamu ..." + total_score;
+    "Jumlah benar: " + total_score;
   return;
 }
 
