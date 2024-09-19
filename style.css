@@ -120,3 +120,7 @@ button:hover {
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
+
+.headermatriks {
+  color: #f1f1f1;
+}
