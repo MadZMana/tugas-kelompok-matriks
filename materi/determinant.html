@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Determinant</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Determinant</h1>
+    </div>
+    <div class="body">
+      <div>
+        <h2><strong>></strong> Apa Itu Determinan Dalam Matriks?</h2>
+        <p>
+          Determinan matriks merupakan selisih antara perkalian elemen-elemen
+          pada diagonal sekunder. Determiinan matriks hanya dapat dicari dengan
+          matriks persegi.
+        </p>
+        <p>Cara menghitungnya sebagai berikut:</p>
+        <h2>> Matriks 2x2</h2>
+        <div style="text-align: left">
+          <h3 class="matrix">
+            $$\begin{align*}\begin{bmatrix}a & b\\c &
+            d\end{bmatrix}\end{align*}$$
+          </h3>
+        </div>
+        <h3>Determinan = ad - bc</h3>
+        <h3>Contoh:</h3>
+        <h3>\begin{bmatrix}2 & 3\\1 & 4\end{bmatrix}</h3>
+        <h3>Determinan = (24) - (31) = 5</h3>
+        <h2>> Matriks 3x3</h2>
+        <p>
+          $$\begin{align*}\begin{bmatrix}a & b & c\\d & e & f\\g & h &
+          i\end{bmatrix}\end{align*}$$
+        </p>
+        <p>
+          Adapun cara pengerjaannya adalah dengan menyalin kedua kolom pertama
+          di sebelah kanan tanda terpisah seperti pada gambar dibawah. Kemudian,
+          buat diagonal utama dan dua garis lain yang sejajar diagonal utama.
+          Buat juga diagonal sekunder dan 2 garis lain sejajar diagonal
+          sekunder.
+        </p>
+        <img src="/images/matriks3x3.png" alt="matriks 3x3" />
+        <p>Kemudian masukkan kedalam rumus berikut:</p>
+        <h3>Determinan = D utama - D sekunder</h3>
+        <h3>Determinan = (aei + bfg + cdh) - (ceg + bdi + afh)</h3>
+        <h3>Contoh:</h3>
+        <p>
+          $$\begin{align*}A &= \begin{bmatrix} 3 & 4 & -1\\4 & 6 & 2\\8 & -2 &
+          3\end{bmatrix}\end{align*}$$
+        </p>
+        <h3>
+        |A| = (3.6.3 + 4.2.8 + (-1).4.(-2)) - (8.6.(-1) + (-2).2.3 +
+          3.4.4)
+        </h3>
+        <h3>|A| = (54+64+8) - ((-48)-12+48)</h3>
+        <h3>|A| = 126-(-12)</h3>
+        <h3>|A| = 138</h3>
+        <hr />
+        <div class="note">
+            <h3>
+              Sudah memahami materi determinan? Cobalah latihan soal berikut:
+            </h3>
+          <a href="/quiz.html"><button>Latihan Soal Determinan</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

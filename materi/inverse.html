@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Determinant</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Inverse</h1>
+    </div>
+    <div class="body">
+      <div>
+        <h2><strong>></strong> Mengenal Inverse Matriks</h2>
+        <p>
+          Invers matriks adalah kebalikan dari sebuah matriks apabila matriks
+          tersebut dikalikan dengan inversnya akan menjadi matriks identitas.
+          Suatu matriks dikatakan memiliki invers jika determinan dari matriks
+          tersebut tidak sama dengan nol.
+        </p>
+        <p>Cara menentukannya sebagai berikut:</p>
+        <h2>> Matriks 2x2</h2>
+        <div style="text-align: left">
+          <h3 class="matrix">
+            $$\begin{align*}A^{-1} &= \begin{bmatrix}a & b\\c &
+            d\end{bmatrix}\end{align*}$$
+          </h3>
+        </div>
+        <h3>
+          Maka, $$\begin{align*}A^{-1} &={\displaystyle\frac{1}{ad - bc}} \cdot
+          \begin{bmatrix}d & -b\\-c & a\end{bmatrix} dengan\,\vert A \vert \ne
+          0\end{align*}$$
+        </h3>
+        <h3>Contoh:</h3>
+        <h3>\begin{bmatrix}3 & -4\\4 & -5\end{bmatrix}</h3>
+        <h3>Maka,</h3>
+        <h3>
+          $$\begin{align*}A^{-1} &={\displaystyle\frac{1}{3.(-5) - (-4).4}}
+          \cdot \begin{bmatrix}-5 & 4\\-4 & 3\end{bmatrix} &= \begin{bmatrix}-5
+          & 4\\-4 & 3\end{bmatrix}\end{align*}$$
+        </h3>
+        <h2>> Matriks 3x3</h2>
+        <p>
+          $$\begin{align*}\begin{bmatrix}a & b & c\\d & e & f\\g & h &
+          i\end{bmatrix}\end{align*}$$
+        </p>
+        <p>
+          Untuk menemukan invers pada matriks 3x3, kita dapat menggunakan metode
+          eliminasi Gauss Jordan. Secara sistematis, eliminasi Gauss Jordan
+          dapat dinyatakan sebagai berikut: $$\begin{align*}\begin{bmatrix}
+          A\vert I\end{bmatrix}\to \begin{bmatrix} I\vert
+          A^{-1}\end{bmatrix}\end{align*}$$
+        </p>
+        <p>
+          Matriks persegi A dieliminasi menggunakan operasi aljabar sampai
+          membentuk matriks identitas. Operasi yang dilakukan pada matriks A
+          juga dilakukan pada matriks identitas sehingga jika matriks A sudah
+          menjadi matriks identitas, maka matriks identitas akan berubah menjadi
+          invers dari matriks A.
+        </p>
+        <hr />
+        <div class="note">
+          <h3>
+            Sudah memahami materi invers matriks? Cobalah latihan soal berikut:
+          </h3>
+          <a href="/quiz.html"><button>Latihan Soal Invers Matriks</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
