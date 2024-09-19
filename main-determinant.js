@@ -1,19 +1,19 @@
 const DB_QUIZ = [
   {
-    question: `Tentukan determinan matriks berikut: <div><img src="/images/det2x2.jpg" alt=""></div>`,
+    question: `<p>Tentukan determinan matriks berikut: </p><div><img src="/images/det2x2.jpg" alt=""></div>`,
     answers: ["23", "14", "(-3)", "(-80)"],
   },
   {
-    question: `Tentukan determinan matriks berikut: <div><img src="/images/det3x3.jpg"></div>`,
-    answers: ["Matrix", "Matris", "Matematika", "Math"],
+    question: `<p>Tentukan determinan matriks berikut: </p> <div><img src="/images/det3x3.jpg"></div>`,
+    answers: ["2", "0", "3", "6"],
   },
   {
-    question: "Apa itu Maiks?",
-    answers: ["Matrix", "Matris", "Matematika", "Math"],
+    question: `<p>Tentukan hasil dari Det A - Det B matriks berikut: </p><div><img src="/images/detAB.jpg"></div>`,
+    answers: ["16", "(-16)", "12", "10"],
   },
 ];
 
-const CORRECT_ANSWER = [2, 3, 2];
+const CORRECT_ANSWER = [2, 1, 1];
 
 function startQuiz() {
   document.getElementById("opening_window").style.display = "none";
@@ -61,7 +61,7 @@ function resetState() {
 function checkScore() {
   for (i = 0; i < saved_answer.length; i++) {
     if (saved_answer[i] == CORRECT_ANSWER[i]) {
-      total_score += 100;
+      total_score += 1;
     }
   }
 }
@@ -71,7 +71,7 @@ function stopQuiz() {
   document.getElementById("quiz_window").style.display = "none";
   document.getElementById("closing_window").style.display = "block";
   document.getElementById("scoreText").innerText =
-    "Score kamu ..." + total_score;
+    "Jumlah benar: " + total_score;
   return;
 }
 
